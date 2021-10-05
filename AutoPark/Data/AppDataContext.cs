@@ -12,6 +12,7 @@ namespace AutoPark.Data
     {
         public AppDataContext(DbContextOptions options) : base(options)
         {
+
             Database.EnsureCreated();
         }
 
