@@ -1,0 +1,51 @@
+﻿@model Auto
+
+<h1>User</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Mark" class="control-label"></label>
+                <input asp-for="Mark" class="form-control" />
+                <span asp-validation-for="Mark" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Model" class="control-label"></label>
+                <input asp-for="Model" class="form-control" />
+                <span asp-validation-for="Model" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cost" class="control-label"></label>
+                <input asp-for="Cost" class="form-control" />
+                <span asp-validation-for="Cost" class="text-danger"></span>
+            </div><div class="form-group">
+                <label asp-for="AgeAuto" class="control-label"></label>
+                <input asp-for="AgeAuto" class="form-control" />
+                <span asp-validation-for="AgeAuto" class="text-danger"></span>
+            </div><div class="form-group">
+                <label asp-for="Color" class="control-label"></label>
+                <input asp-for="Color" class="form-control" />
+                <span asp-validation-for="Color" class="text-danger"></span>
+            </div><div class="form-group">
+                <label asp-for="HorsePower" class="control-label"></label>
+                <input asp-for="HorsePower" class="form-control" />
+                <span asp-validation-for="HorsePower" class="text-danger"></span>
+            </div><div class="form-group">
+                <label asp-for="MotorSize" class="control-label"></label>
+                <input asp-for="MotorSize" class="form-control" />
+                <span asp-validation-for="MotorSize" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
